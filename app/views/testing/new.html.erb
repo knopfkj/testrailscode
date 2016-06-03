@@ -1,0 +1,17 @@
+<h1>Login Page</h1>
+
+<%= form_for :testing do |user| %>
+<p>
+  <%= user.label :name %>
+  <%= user.text_field :name %>
+</p>
+
+<p>
+  <%= user.label :emailaddy %>
+  <%= user.text_field :emailaddy %>
+</p>
+
+<p>
+  <%= user.submit %>
+</p>
+<% end %>

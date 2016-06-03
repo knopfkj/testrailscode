@@ -1,0 +1,15 @@
+<h1>Testing</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Email Address</th>
+  </tr>
+
+  <% @testings.each do |testing| %>
+    <tr>
+      <td><%= testing.user %></td>
+      <td><%= testing.emailaddy %></td>
+    </tr>
+  <% end %>
+</table>
