@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :articles do
 	resources :comments
+	resources :instances
 	end
 
   resources :testing

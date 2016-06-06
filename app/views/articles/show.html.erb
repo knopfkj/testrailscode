@@ -8,8 +8,14 @@
   <%= @article.text %>
 </p>
 
+<h2>Instances</h2>
+<%= render @article.instances %>
+
+<h2>Add an instance:</h2>
+<%= render 'instances/form' %>
+
 <h2>Comments</h2>
-<%= render @article.comments %>
+<%= render @article.comments %> 
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
