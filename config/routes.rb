@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :testemplates
   get 'welcome/index'
 
   resources :articles do

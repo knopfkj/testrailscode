@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160606140113) do
+ActiveRecord::Schema.define(version: 20160609151128) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -40,6 +40,14 @@ ActiveRecord::Schema.define(version: 20160606140113) do
   end
 
   add_index "instances", ["article_id"], name: "index_instances_on_article_id"
+
+  create_table "testemplates", force: :cascade do |t|
+    t.string   "field1"
+    t.decimal  "field2"
+    t.boolean  "field3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "testings", force: :cascade do |t|
     t.string   "name"

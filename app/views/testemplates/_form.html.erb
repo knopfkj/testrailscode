@@ -1,0 +1,29 @@
+<%= form_for(@testemplate) do |f| %>
+  <% if @testemplate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@testemplate.errors.count, "error") %> prohibited this testemplate from being saved:</h2>
+
+      <ul>
+      <% @testemplate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :field1 %><br>
+    <%= f.text_field :field1 %>
+  </div>
+  <div class="field">
+    <%= f.label :field2 %><br>
+    <%= f.text_field :field2 %>
+  </div>
+  <div class="field">
+    <%= f.label :field3 %><br>
+    <%= f.check_box :field3 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
