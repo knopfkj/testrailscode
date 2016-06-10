@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  minutes_remain: 1
+  minutes_used: 1
+  instance_limit: 1
+
+two:
+  user_id: 
+  minutes_remain: 1
+  minutes_used: 1
+  instance_limit: 1
